@@ -107,7 +107,6 @@ html {
 	display: inline-block;
 	padding: 4px;
 	border: 1px solid #ccc;
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	background: #fff;
 }
 .avatar:hover,
@@ -138,14 +137,12 @@ html {
 		color: #fff;
 	}
 .avatar.self {
-	background-color: #edf2f9;
 	border-color: #bec2c7;
 }
 	.avatar.self span {
 		background: #447BC4;
 	}
 .avatar.owner {
-	background-color: #edf5e8;
 	border-color: #bec4ba;
 }
 	.avatar.owner span {
@@ -159,11 +156,9 @@ html {
 #forum-header {
 	width: 980px;
 	margin: 0 auto;
-	margin-bottom: 40px;
 	padding-top: 78px;
-	padding-bottom: 18px;
-	background: url(img/header-bg.png) no-repeat center top,
-	            url(img/header-divider.png) no-repeat center bottom;
+	padding-bottom: 10px;
+	background: url(img/header-bg.png) no-repeat center top;
 }
 	#forum-header h1 {
 		padding: 20px 0 20px 60px;
@@ -176,6 +171,31 @@ html {
 	#forum-header a {
 		color: #333;
 	}
+
+
+#forum-breadcrumbs {
+	padding: 15px 0;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10px;
+	background: url(img/header-divider.png) no-repeat center bottom;
+}
+	#forum-breadcrumbs a {
+		font-weight: bold;
+	}
+
+
+#forum-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 40px;
+	background: -moz-linear-gradient(left,
+		                             rgba(255,255,255,0),
+		                             #fff 40px,
+		                             #fff 920px,
+		                             rgba(255,255,255,0)
+		                             );
+}
+
 
 
 #main-header {
@@ -702,9 +722,9 @@ html {
 		}
 			#thread-add-reply .reply .tb-buttons  {
 				display: inline-block;
-				width: 146px;
-				height: 16px;
-				background: url(img/toolbar.png) no-repeat 0 0;
+				width: 386px;
+				height: 34px;
+				background: url(img/markup.png) no-repeat -132px 0;
 			}
 		#thread-add-reply .reply .uploadbar {
 			padding-top: 10px;
@@ -721,8 +741,8 @@ html {
 			padding: 0;
 			border: 0;
 			font-family: inherit;
-			font-size: inherit;
-			line-height: inherit;
+			font-size: 16px;
+			line-height: 20px;
 			color: inherit;
 			resize: vertical;
 		}
@@ -761,7 +781,9 @@ html {
 			background: url(img/stem-lws.png) no-repeat left top;
 		}
 		.mini-reply .content .author  {
+			font-family: Helvetica, Arial, sans-serif;
 			font-weight: bold;
+			color: #333;
 		}
 		.mini-reply .content a span {
 			position: absolute;
@@ -771,9 +793,10 @@ html {
 			bottom: 0;
 		}
 	.mini-reply .rating {
-		font-size: 12px;
 		margin: 0 10px;
 		margin-top: 7px;
+		font-size: 12px;
+		color: #666;
 	}
 
 
@@ -873,7 +896,7 @@ html {
 		}
 			.reply .actions .do-report a {
 				font-size: 12px;
-				color: #666;
+				color: #999;
 			}
 	.reply .meta  {
 		margin: 10px 15px 0;
