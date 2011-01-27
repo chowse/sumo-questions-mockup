@@ -74,7 +74,7 @@ html {
 
 .button.small {
 	font-size: 13px;
-	padding: 4px 11px;
+	padding: 5px 12px;
 	padding-bottom: 7px;
 	-moz-box-shadow: 0 2px rgba(0, 0, 0, 0.1),
 	                 0 -3px rgba(0, 0, 0, 0.1) inset;
@@ -221,13 +221,13 @@ html {
 #main-sidebar {
 }
 	#main-sidebar section {
-		background: #cce2f3;
-		border-radius: .25em;
+		background: #CDE6F5;
+		-moz-border-radius: 10px;
 		margin-bottom: 20px;
 		padding: 15px;
 	}
 		#main-sidebar section h2 {
-			color: #3a4692;
+			color: #32559B;
 			font-family: Georgia, "Times New Roman", Times, serif;
 			font-size: 18px;
 			font-style: italic;
@@ -317,16 +317,18 @@ html {
 			padding: 15px;
 			margin-right: 140px;
 			-moz-border-radius: 15px;
+			font-family: Georgia, Times, sans-serif;
 			font-size: 14px;
-			line-height: 16px;
+			line-height: 18px;
+			color: #666;
 			background: #fff;
 			border: 1px solid rgba(0,0,0,.15);
 			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 		}
 			#main-threads .thread .content h4 {
-				font-size: 16px;
-				font-weight: bold;
-				line-height: 18px;
+				font-size: 18px;
+				line-height: 22px;
+				color: #333;
 			}	
 			#main-threads .thread .content h4 span {
 				position: absolute;
@@ -337,7 +339,6 @@ html {
 			}
 			#main-threads .thread .content p {
 				margin-top: .5em;
-				font-size: 13px;
 			}
 		#main-threads .thread .stem {
 			position: absolute;
@@ -425,7 +426,6 @@ html {
 }
 
 .pager {
-	text-align: center;
 	margin-top: 1.25em;
 }
 	.pager a,
@@ -500,16 +500,18 @@ html {
 #thread-orig .post {
 	padding: 20px;
 	-moz-border-radius: 20px;
+	color: #666;
 	background: #fff;
 	border: 1px solid #ccc;
 	-moz-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+	font-family: Georgia, "Times New Roman", serif;
 	font-size: 16px;
 	line-height: 20px;
 }
 	#thread-orig .post h2 {
 		font-size: 24px;
-		font-weight: bold;
 		line-height: 28px;
+		color: #333;
 	}
 	#thread-orig .post p {
 		margin-top: 1em;
@@ -633,17 +635,12 @@ html {
 
 
 #thread-replies-outer {
-	background: -moz-linear-gradient(top center,
-	                                 rgba(205, 230, 247, 1) 0px,
-	                                 rgba(205, 230, 247, 0) 6px),
-	            -moz-linear-gradient(bottom center,
-	                                 rgba(205, 230, 247, 1) 0,
-	                                 rgba(205, 230, 247, 0) 6px);
-	background-color: #f0f7fe;
-	margin-top: 40px;
-	padding: 40px 1px;
 }
 #thread-replies {
+	margin: 40px 0;
+	padding: 40px 0;
+	background-color: #f0f7fe;
+	-moz-border-radius: 20px;
 }
 	#thread-replies hgroup,
 	#thread-replies .pager {
@@ -655,13 +652,13 @@ html {
 		#thread-replies h2 {
 			display: inline;
 			margin-right: .5em;
-			font-family: MetaBlack, Helvetica, Arial, sans-serif;
-			font-size: 39px;
-			text-transform: uppercase;
+			font-family: Georgia, "Times New Roman", serif;
+			font-size: 28px;
+			font-style: italic;
+			color: #333;
 		}
 		#thread-replies hgroup .button {
-			vertical-align: 10px;
-			text-transform: uppercase;
+			vertical-align: 5px;
 		}
 	#thread-replies .pager {
 		margin-top: 40px;
@@ -669,7 +666,6 @@ html {
 	
 	
 #thread-add-reply-outer {
-	padding: 40px 0;
 }
 #thread-add-reply {
 }
@@ -679,9 +675,10 @@ html {
 	}
 	#thread-add-reply h2 {
 		margin: 0 220px 0 140px;
-		font-family: MetaBlack, Helvetica, Arial, sans-serif;
-		font-size: 39px;
-		text-transform: uppercase;
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 28px;
+		font-style: italic;
+		color: #333;
 	}
 	#thread-add-reply .buttons {
 		margin-top: 20px;
@@ -713,6 +710,7 @@ html {
 			padding-top: 10px;
 			margin-top: 15px;
 			border-top-width: 1px;
+			font-family: Helvetica, Arial, sans-serif;
 			font-size: 12px;
 		}
 		#thread-add-reply .reply textarea {
@@ -748,6 +746,9 @@ html {
 		padding: 10px;
 		-moz-border-radius: 10px;
 		background: #fff;
+		color: #666;
+		font-family: Georgia, "Times New Roman", serif;
+		font-size: 13px;
 		line-height: 17px;
 		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
 	}
@@ -810,6 +811,8 @@ html {
 		padding: 20px;
 		-moz-border-radius: 10px;
 		background: #fff;
+		color: #666;
+		font-family: Georgia, "Times New Roman", serif;
 		font-size: 14px;
 		line-height: 18px;
 		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
@@ -823,7 +826,7 @@ html {
 			background: url(img/stem-lws.png) no-repeat left top;
 		}
 		.reply .content p  {
-			margin-top: 18px;
+			margin-top: 14px;
 		}
 		.reply .content p:first-child  {
 			margin-top: 0;
